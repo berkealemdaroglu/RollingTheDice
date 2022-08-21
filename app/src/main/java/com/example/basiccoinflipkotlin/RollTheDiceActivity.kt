@@ -11,7 +11,7 @@ class RollTheDiceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_roll_the_dice)
-        buttonRoll.setOnClickListener {
+        buttonRoll2.setOnClickListener {
             onRollTheDice()
         }
         rollGif.isVisible = false
@@ -31,18 +31,20 @@ class RollTheDiceActivity : AppCompatActivity() {
 
 
     private fun rollTheDice(imageId : Int, rollSide : String){
-        buttonRoll.animate().apply {
+        buttonRoll2.animate().apply {
             duration = 1500
-            buttonRoll.isClickable = false
+            buttonRoll2.isClickable = false
             buttonRoll.isVisible = false
+            buttonRoll2.isVisible = false
             rollGif.isVisible = true
 
 
         }.withEndAction {
             buttonRoll.setImageResource(imageId)
             Toast.makeText(this,rollSide,Toast.LENGTH_SHORT).show()
-            buttonRoll.isClickable = true
+            buttonRoll2.isClickable = true
             buttonRoll.isVisible = true
+            buttonRoll2.isVisible = true
             rollGif.isVisible = false
         }.start()
     }
