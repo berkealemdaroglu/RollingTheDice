@@ -1,4 +1,4 @@
-package com.example.basiccoinflipkotlin
+package com.example.rollthediceapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

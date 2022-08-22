@@ -1,4 +1,4 @@
-package com.example.basiccoinflipkotlin
+package com.example.rollthediceapp
 
 import org.junit.Test
 

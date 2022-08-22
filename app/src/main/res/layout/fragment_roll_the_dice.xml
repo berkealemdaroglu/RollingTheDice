@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RollTheDiceActivity">
+    >
 
     <ImageView
         android:id="@+id/buttonRoll"
@@ -39,7 +37,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="459dp"
         android:gravity="center"
-        android:text="Roll The Dice"
+        android:text="@string/roll_the_dice"
         android:textSize="48sp" />
 
     <Button
@@ -54,6 +52,6 @@
         android:layout_marginTop="457dp"
         android:layout_marginEnd="166dp"
         android:layout_marginBottom="97dp"
-        android:text="Roll" />
+        android:text="@string/roll" />
 
 </RelativeLayout>
